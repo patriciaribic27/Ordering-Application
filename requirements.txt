@@ -1,0 +1,13 @@
+# Modern Ordering Application - Dependencies
+
+# Async HTTP client/server
+aiohttp>=3.8.0
+
+# PDF report generation (stable version for Python 3.8)
+reportlab==3.6.13
+
+# Testing
+pytest>=6.0.0
+
+# Note: tkinter is included with Python standard library
+# Note: asyncio is included with Python standard library
