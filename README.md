@@ -3,9 +3,7 @@
 A Python application that simulates self-service drink ordering in a café using tablet-based interfaces.
 
 Each table in the café has a tablet where guests can independently place drink orders through a graphical user interface (GUI), without interacting with a waiter.
-
 ---
-
 ## Features
 
 - Tablet-based GUI built with **Tkinter**
@@ -20,9 +18,7 @@ Each table in the café has a tablet where guests can independently place drink 
 - CSV and PDF export of daily order reports
 - Full test coverage with **pytest** and **doctest**
 - Logging and exception handling using decorators
-
-- ---
-
+---
 ## Installation
 
 Install project dependencies using:
