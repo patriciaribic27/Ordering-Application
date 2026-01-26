@@ -3,6 +3,12 @@ Kompletna demonstracija automatskog prebacivanja strategije.
 Pokazuje sve scenarije: Happy Hour, Standard, i Bulk Discount.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import logging
 from datetime import datetime
 from unittest.mock import patch
