@@ -8,10 +8,14 @@ import sys
 import time
 from pathlib import Path
 
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 def main():
     """Launch multiple GUI instances for parallel order testing."""
     
-    gui_script = Path(__file__).parent / "gui" / "tablet_gui.py"
+    # GUI script is in parent/gui folder
+    gui_script = Path(__file__).parent.parent / "gui" / "tablet_gui.py"
     
     print("=" * 70)
     print("🚀 PARALLEL ORDER PROCESSING TEST")
@@ -89,3 +93,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
