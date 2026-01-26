@@ -3,6 +3,12 @@ Demonstracija pravilne implementacije Strategy Pattern-a.
 Pokazuje fleksibilnost i laku zamjenu strategija.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import logging
 from datetime import datetime
 from services.pricing_strategy import (
@@ -138,3 +144,4 @@ def demonstrate_automatic_strategy():
 if __name__ == "__main__":
     demonstrate_strategy_pattern()
     demonstrate_automatic_strategy()
+
