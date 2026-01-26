@@ -1,13 +1,23 @@
 # Modern Ordering Application - Dependencies
+# Python 3.8+ required
 
-# Async HTTP client/server
-aiohttp>=3.8.0
+# Async HTTP client/server (fixed version for compatibility)
+aiohttp==3.9.1
 
-# PDF report generation (stable version for Python 3.8)
+# PDF report generation (stable version for Python 3.8+)
 reportlab==3.6.13
 
-# Testing
-pytest>=6.0.0
+# Testing framework
+pytest==7.4.3
+pytest-asyncio==0.21.1
 
 # Note: tkinter is included with Python standard library
 # Note: asyncio is included with Python standard library
+
+# To install all dependencies:
+# pip install -r requirements.txt
+
+# To run tests:
+# pytest tests/ -v
+
+
