@@ -3,6 +3,12 @@ Test script for time-based automatic strategy selection.
 This demonstrates that the strategy changes automatically based on time.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import logging
 from datetime import datetime
 from services.pricing_strategy import (
