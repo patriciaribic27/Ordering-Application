@@ -3,8 +3,13 @@ Quick test to demonstrate that all decorators are now in use.
 Run this to see decorators in action and check log.txt.
 """
 
-import asyncio
+import sys
 from pathlib import Path
+
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+import asyncio
 from models.factory import BeverageFactory
 from services.order_service import OrderService
 from services.menu_service import MenuService
