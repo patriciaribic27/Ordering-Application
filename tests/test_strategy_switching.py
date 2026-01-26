@@ -3,6 +3,12 @@ Test script that simulates different times to verify strategy switching.
 This uses monkey patching to test Happy Hour behavior at any time.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import logging
 from datetime import datetime, time
 from unittest.mock import patch
@@ -116,3 +122,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
