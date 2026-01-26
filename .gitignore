@@ -9,6 +9,7 @@ __pycache__/
 venv/
 .venv/
 env/
+ENV/
 
 # Logs
 *.log
@@ -32,3 +33,8 @@ Thumbs.db
 *.egg-info/
 dist/
 build/
+
+# Test Coverage
+.coverage
+htmlcov/
+.pytest_cache/
