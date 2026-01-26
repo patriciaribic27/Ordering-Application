@@ -2,6 +2,12 @@
 Unit tests for Order Service with async processing.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import pytest
 import asyncio
 from services.order_service import OrderService, Order, OrderStatus
