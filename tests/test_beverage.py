@@ -2,6 +2,12 @@
 Unit tests for Beverage models and Factory pattern.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to sys.path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import pytest
 from models.beverage import Beverage
 from models.factory import BeverageFactory
